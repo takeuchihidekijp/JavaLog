@@ -6,7 +6,7 @@ package jp.techacademy.hideki.takeuchi.javalog;
 
 import android.util.Log;
 
-class Dog {
+class Dog extends Animal implements Movable {
 
     String name;
     int age;
@@ -19,4 +19,10 @@ class Dog {
     public void say(){
         Log.d("javatest",this.name+ "("+  this.age + "歳)"+ "[ワンワン]");
     }
+
+    @Override
+    public void move(){
+        Log.d("javatest", this.name + "(" + this.age + "歳)" + "は全力で走った。");
+    }
+
 }

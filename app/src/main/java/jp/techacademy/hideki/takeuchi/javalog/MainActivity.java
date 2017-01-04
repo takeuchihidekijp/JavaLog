@@ -13,13 +13,12 @@ public class MainActivity extends AppCompatActivity {
 
         Dog dog = new Dog( "ポチ", 3 );
 
-        dog.say();
-        Log.d("javatest","犬の名前は" + dog.name + "です");
-        Log.d("javatest", "犬の年齢は" + dog.age + "歳です。");
+        dog.move();
 
-        int num = 10;
-        Log.d("javatest", String.valueOf(num));
 
-        Log.d("javatest","Log出力テスト");
+        Human human = new Human("竹内",40,"人生");
+
+        human.say();
+        human.think();
     }
 }
